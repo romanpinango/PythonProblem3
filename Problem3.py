@@ -53,8 +53,11 @@ while x > 1:
         while not isDivisible:
             y = findNextPrime(p)
             if x % p == 0:
+                # print(primes)
                 isDivisible = True
                 x = x // p
                 f = p if p > f else f
+            else:
+                p = y
 
 print(f)
